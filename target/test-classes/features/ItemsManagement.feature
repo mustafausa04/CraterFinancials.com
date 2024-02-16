@@ -1,12 +1,13 @@
+@Regression
 Feature: Items Management
 
 #we will create Background to put the steps that are repeted in every scenario to make it easy
   Background:
     Given As an entity user, I am logged in
 
-  @createItem
+  @createItem @smokeTest
   Scenario: As a user, I am able to create an item or a service
-# we put this step in the Background    Given As an entity user, I am logged in
+# we put this step in the Background    Given As an entity user, I am logged in same with the step And I navigate to Items tab we could move it to the Background
     And I navigate to Items tab
     When I click on the Add Item button
     And I should be on item input page
@@ -17,7 +18,7 @@ Feature: Items Management
 
   @editItem
   Scenario: As a user, I am able to update an item or a service
-#we put thi step in the Background    Given As an entity user, I am logged in
+#we put thi step in the Background    Given As an entity user, I am logged in same with the step And I navigate to Items tab we could move it to the Background
     And I navigate to Items tab
     When I click on the Add Item button
     And I should be on item input page
