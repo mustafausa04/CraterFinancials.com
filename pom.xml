@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>PrimeTechFinancials</groupId>
-  <artifactId>PrimeTechFinancials</artifactId>
+  <groupId>CraterFinancials</groupId>
+  <artifactId>CraterFinancials</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
   <!-- here we created the maven source which is 17 -->
@@ -34,5 +34,27 @@
        </dependency>
 
    </dependencies>
+   
+   <!-- according to khalil put this block of code in every maven pom.xml file. it's called maven-surefire-plugin is use to run maven scripts, command, waya command1 -->
+   <build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M5</version>
+				<configuration>
+					<testFailureIgnore>true</testFailureIgnore>
+					<includes>
+						<include>**/TestRunner.java</include><!--this point to the fie TestRunner.java in the runners package -->
+					</includes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
   
 </project>

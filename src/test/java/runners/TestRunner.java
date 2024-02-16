@@ -34,7 +34,12 @@ import io.cucumber.junit.CucumberOptions;
 		//tags="@customerTableMoreOptions"
 		//tags="@newCustomerCreatedMessage"
 		//tags="@newCustomerInvalidNoInfo"
-		tags="@newCustomers"
+		//tags="@newCustomers"
+		//tags="@SalesandExpensesHeader"
+        //tags="@dashboardButtons"
+        //tags="@dashboardHeaders"
+		//tags="@dashboardGraph"
+		tags="@smokeTest"
 		
 		)
 public class TestRunner {

@@ -18,7 +18,7 @@
 #Sample Feature Definition Template
 
 # if you run this tag "@userManagement" it will run everything
-@userManagement
+@userManagement @Regression
 Feature: User management / access management
 
 # we could add @smokeTest tag and when ever we run the cucumber it will apply the smoke test for the scenario that is 
